@@ -1,0 +1,653 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Blanchard HTML-sending</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv=«Content-Type» content=«text/html; charset=utf-8»>
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+
+		[style*="Open Sans"] {
+			font-family: 'Open Sans', arial, sans-serif !important;
+		}
+
+		[style*="Verdana"] {
+			font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border: none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100% !important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0px;
+			mso-xable-rspace: 0px;
+		}
+
+		.center {
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+
+		.table-600 {
+			width: 600px !important;
+		}
+
+		.table-520 {
+			width: 520px !important;
+		}
+
+		.pt-32 {
+			padding-top: 32px;
+			border-spacing: 0;
+		}
+
+		.pb-34 {
+			padding-bottom: 34px;
+			border-spacing: 0;
+		}
+
+		.pb-32 {
+			padding-bottom: 32px;
+			border-spacing: 0;
+		}
+
+		.pb-21 {
+			padding-bottom: 21px;
+		}
+
+		.pb-16 {
+			padding-bottom: 16px;
+			border-spacing: 0;
+		}
+
+		.pb-8 {
+			padding-bottom: 8px;
+			border-spacing: 0;
+		}
+
+		.p-full-32 {
+			padding-top: 32px;
+			/* padding-bottom: 32px; */
+			padding-left: 32px;
+			padding-right: 0;
+		}
+
+		.p-full-26 {
+			padding-top: 26px;
+			padding-bottom: 26px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.mini-title {
+			margin: 0;
+			margin-bottom: 13px;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 24px;
+			color: #515151;
+		}
+
+		.another-title-13 {
+			margin: 0;
+			margin-bottom: 13px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #ffffff;
+		}
+
+		.mini-descr {
+			margin: 0;
+			margin-bottom: 13px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 24px;
+			color: #515151;
+		}
+
+		.mini-link {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 17px;
+			color: #1b54DD;
+			text-decoration: none;
+		}
+
+		.link {
+			text-decoration: none;
+			font-style: normal;
+			font-size: 14px;
+			line-height: 17px;
+			color: rgba(38, 38, 38, 1);
+		}
+
+		.adress {
+			text-decoration: none;
+			font-style: normal;
+			font-size: 10px;
+			line-height: 16px;
+			color: rgba(38, 38, 38, 1);
+		}
+
+		.hero-text {
+			margin: 0;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 400;
+			font-style: normal;
+			color: #ffffff;
+		}
+
+		.another-title-8 {
+			margin: 0;
+			margin-bottom: 8px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #ffffff;
+		}
+
+		.alert-title {
+			color: #515151;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: normal;
+			margin: 0;
+		}
+
+		.alert-text {
+			color: #515151;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: normal;
+			margin: 0;
+		}
+
+		.p-footer {
+			padding-top: 27px;
+			padding-bottom: 16px;
+		}
+
+		.footer-text {
+			color: #757575;
+			font-size: 12px;
+			line-height: 24px;
+			font-weight: normal;
+			margin: 0;
+		}
+
+		.pt-12 {
+			padding-top: 12px;
+		}
+
+		.footer-bottom {
+			color: #757575;
+			font-size: 10px;
+			line-height: 24px;
+			font-weight: normal;
+			margin: 0;
+		}
+
+		.footer-span {
+			color: #9D5CD0;
+			text-decoration: underline;
+		}
+
+		.p-button {
+			margin-top: 34px !important;
+			margin-bottom: 32px !important;
+		}
+
+
+		@media (max-width: 620px) {
+			.table-600 {
+				width: 280px !important;
+			}
+
+			.table-520 {
+				width: 244px !important;
+			}
+
+			.table-280 {
+				width: 280px !important;
+			}
+
+			.header-logo {
+				width: 114px !important;
+				height: 25px !important;
+			}
+
+			.p-mobile {
+				padding-top: 17px !important;
+				padding-bottom: 17px !important;
+			}
+
+
+			.mini-title {
+				margin: 0;
+				margin-bottom: 13px;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 24px;
+				color: #515151;
+			}
+
+			.mobile-top,
+			.mobile-bottom {
+				display: block !important;
+			}
+
+
+			.mobile-bottom {
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-top: 16px;
+			}
+
+			.list-img {
+				width: 244px !important;
+				height: 84px !important;
+			}
+
+		}
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px; color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
+		письмо</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+		<tr>
+			<td height="100%">
+				<table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600px" bgcolor="#000000">
+					<tr>
+						<td align="center">
+							<table width="600" class="table-280" cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="center" class="p-mobile" style="padding-top: 30px;padding-bottom: 28px;">
+										<img src="https://blanchardmailsending.tmweb.ru/img/%D0%9B%D0%BE%D0%B3%D0%BE.png" class="header-logo"
+											width="187" alt="Логотип" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff">
+					<tr>
+						<td align="center">
+							<table class="table-600" cellpadding="0" cellspacing="0" wigth="600">
+								<tr>
+									<td>
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td width="600" class="table-280 mobile-top">
+													<img class="hero-img" style="width:100%; max-width:600px;height:auto; border: 0;" src="https://blanchardmailsending.tmweb.ru/img/river.jpg"
+														alt="основная картинка 1">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff">
+					<tr>
+						<td class="pt-32" align="center">
+							<table class="table-520" cellpadding="0" cellspacing="0" wigth="520">
+								<tr>
+									<td width="520" class="table-520 mobile-top">
+										<h2 class="mini-title" style="font-family: Arial, Helvetica, sans-serif;">
+											Торжество импрессионизма
+										</h2>
+										<p class="mini-descr" style="font-family: Arial, Helvetica, sans-serif;">
+											Опыт говорит нам, что семантический разбор внешних противодействий требует анализа новых
+											принципов формирования материально-технической и кадровой базы.
+											Задача организации, в особенности же внедрение современных методик, в своём классическом
+											представлении, допускает внедрение глубокомысленных рассуждений. Есть над чем задуматься:
+											элементы политического процесса преданы социально-демократической анафеме!
+											Но интерактивные прототипы заблокированы в рамках своих собственных рациональных
+											ограничений.
+											Сторонники тоталитаризма в науке ограничены исключительно образом мышления.
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
+					<tr>
+						<td class="p-full-26" align="center">
+							<table class="table-520" cellpadding="0" cellspacing="0" wigth="600">
+								<tr>
+									<td class="pb-21">
+										<table cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td width="244" class="table-520 mobile-top">
+													<h2 class="another-title-13" style="font-family: Arial, Helvetica, sans-serif;">
+														Представленные художники
+													</h2>
+												</td>
+											</tr>
+											<tr>
+												<td width="244" class="table-520 mobile-top">
+													<img class="list-img" src="https://blanchardmailsending.tmweb.ru/img/list-img-1.jpg"
+														alt="картинка списка 1">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td class="pb-21">
+													<table cellpadding="0" cellspacing="0" align="center">
+														<tr>
+															<td width="244" class="table-520 mobile-top">
+																<h2 class="another-title-8" style="font-family: Arial, Helvetica, sans-serif;">
+																	Поль Гоген
+																</h2>
+															</td>
+														</tr>
+														<tr>
+															<td width="244" class="table-520 mobile-top">
+																<p class="hero-text"
+																	style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 21px;">
+																	Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в
+																	значительной
+																	степени обусловливает важность укрепления моральных ценностей.
+																</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="600" class="table-520 mobile-top">
+																<img class="list-img" src="https://blanchardmailsending.tmweb.ru/img/list-img-2.jpg"
+																	alt="картинка списка 2">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="pb-21">
+										<table cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td width="244" class="table-520 mobile-top">
+													<h2 class="another-title-8" style="font-family: Arial, Helvetica, sans-serif;">
+														Огюст Ренуар
+													</h2>
+												</td>
+											</tr>
+											<tr>
+												<td width="244" class="table-520 mobile-top">
+													<p class="hero-text" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 21px;">
+														А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные
+														особенности картины в целом.
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td width="600" class="table-520 mobile-top">
+													<img class="list-img" src="https://blanchardmailsending.tmweb.ru/img/list-img-3.jpg"
+														alt="картинка списка 3">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="pb-21">
+										<table cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td width="244" class="table-520 mobile-top">
+													<h2 class="another-title-8" style="font-family: Arial, Helvetica, sans-serif;">
+														Клод Моне
+													</h2>
+												</td>
+											</tr>
+											<tr>
+												<td width="244" class="table-520 mobile-top">
+													<p class="hero-text" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 21px;">
+														Современная методология разработки однозначно фиксирует необходимость системы массового
+														участия.
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td width="600" class="table-520 mobile-top">
+													<img class="list-img" src="https://blanchardmailsending.tmweb.ru/img/list-img-4.jpg"
+														alt="картинка списка 4">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="pb-21">
+										<table cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td width="244" class="table-520 mobile-top">
+													<h2 class="another-title-8" style="font-family: Arial, Helvetica, sans-serif;">
+														Эдуард Мане
+													</h2>
+												</td>
+											</tr>
+											<tr>
+												<td width="244" class="table-520 mobile-top">
+													<p class="hero-text" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 21px;">
+														Но социально-экономическое развитие является качественно новой ступенью вывода текущих
+														активов. </p>
+												</td>
+											</tr>
+											<tr>
+												<td width="600" class="table-520 mobile-top">
+													<img class="list-img" src="https://blanchardmailsending.tmweb.ru/img/list-img-5.jpg"
+														alt="картинка списка 5">
+												</td>
+											</tr>
+										</table>
+								<tr>
+									<td width="244" class="table-520 mobile-top">
+										<h2 class="another-title-8" style="font-family: Arial, Helvetica, sans-serif;">
+											Винсент Ван Гог
+										</h2>
+									</td>
+								</tr>
+								<tr>
+									<td width="244" class="table-520 mobile-top">
+										<p class="hero-text" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 21px;">
+											Повседневная практика показывает, что разбавленное изрядной долей эмпатии, рациональное мышление
+											требует
+											анализа поставленных обществом задач
+										</p>
+									</td>
+								</tr>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff">
+					<tr>
+						<td class="pt-32" align="center">
+							<table class="table-520" cellpadding="0" cellspacing="0" wigth="600">
+								<tr>
+									<td class="pb-34 table-520 mobile-top" width="520">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td class="pb-16">
+													<h2 class="alert-title" style="font-family: Arial, Helvetica, sans-serif;">
+														И это ещё не всё!
+													</h2>
+												</td>
+											</tr>
+											<tr>
+												<td align="top" width="244" valign="top" class="table-520 mobile-top">
+													<img src="https://blanchardmailsending.tmweb.ru/img/check-square.png"
+														alt="картинка чек область" style="display: block; margin-bottom: 11px;">
+													<p class="alert-text" style="width: 138px; height: 66px; margin-right: 29px;">
+														Уникальные подборки <br> работ с&nbsp;авторскими <br>рецензиями
+													</p>
+												</td>
+												<td align="top" width="184" valign="top" class="table-520 mobile-top" style="padding-right: 27px">
+													<img src="https://blanchardmailsending.tmweb.ru/img/calendar.png" alt="картинка календарь"
+														style="display: block; margin-bottom: 11px;">
+													<p class="alert-text" style="width: 138px; height: 66px;">
+														Возможность настроить<br>нашу рассылку под свой <br> личный вкус
+													</p>
+												</td>
+												<td align="top" valign="top" class="table-520 mobile-top" >
+													<img src="https://blanchardmailsending.tmweb.ru/img/arrow-up-circle.png"
+														alt="картинка стрелка в круге" style="display: block; margin-bottom: 11px;">
+													<p class="alert-text" style="width: 138px; height: 66px;">
+														У&nbsp;вас есть пожелания и&nbsp;предложения? <br>Напишите нам в&nbsp;ответ на&nbsp;это
+														письмо!
+													</p>
+												</td>
+											</tr>
+										</table>
+								<tr align="center">
+									<td align="center !important">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+                        <td align="center" class="pb-32" width="520" lass="table-520 mobile-top">
+                          <div >
+                            <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://myblanchard.tmweb.ru/" ems:notrack="true" style="height:45px;v-text-anchor:middle;width:240px;" arcsize="40%" stroke="f" fillcolor="#9D5CD0">
+                            <w:anchorlock/>
+                            <center>
+                            <![endif]-->
+                            <a target="_blank" href="https://blanchard123.tmweb.ru/" style="border-radius:48px;  background: #9D5CD0; display:inline-block; font-family: Arial, Helvetica, sans-serif, 'Arial'; font-size:14px; line-height: 1; text-align: center; vertical-align: middle; text-decoration: none; width: 240px; border: 1px transparent solid; -webkit-text-size-adjust: none;  padding-top: 16px; padding-bottom: 16px;">
+                              <b style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 21px; color: #FFFFFF; text-decoration: none !important; font-weight: bold;">Узнать все подробности</b>
+                              </a>
+                              <!--[if mso]></center>
+                              </v:roundrect>
+                              <![endif]-->
+                          </div>
+                        </td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
+				<tr>
+					<td class="p-footer pb-21" align="center">
+						<table class="table-520" cellpadding="0" cellspacing="0" wigth="520">
+							<tr>
+								<td align="center" width="520" lass="table-520 mobile-top">
+									<table cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" style="display: inline-block; margin-right: 19px;">
+													<a href="https://blanchard123.tmweb.ru/">
+														<img src="https://blanchardmailsending.tmweb.ru/img/vk.png" alt="Вконтакте" style="width: 35px; height: 35px; border: 0;">
+													</a>
+												</td>
+												<td align="center" style="display: inline-block; margin-right: 19px;">
+													<a href="https://blanchard123.tmweb.ru/">
+														<img src="https://blanchardmailsending.tmweb.ru/img/fb.png" alt="Фэйсбук" style="width: 35px; height: 35px; border: 0;">
+													</a>
+												</td>
+												<td align="center" style="display: inline-block; margin-right: 19px;">
+													<a href="https://blanchard123.tmweb.ru/">
+														<img src="https://blanchardmailsending.tmweb.ru/img/instagram.png" alt="Инстаграмм" style="width: 35px; height: 35px; border: 0;">
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" class="pt-12">
+									<p class="footer-text">
+										Blanchard © 2020 / Все права защищены
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#ededed">
+				<tr>
+					<td align="center">
+						<p class="footer-bottom">
+							Вы можете так же
+							<a href="https://blanchard123.tmweb.ru/" class="footer-span">
+								отписаться от рассылки
+							</a>
+						</p>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+</body>
+
+</html>
